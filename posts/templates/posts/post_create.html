@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Create</title>
+</head>
+
+<body>
+<p>if you are manager or employer , and came here to check my resume and work , i will be happy to put post for me.<br>
+    and <strong>please tick the hidden checkbox to be visible just for me </strong>.<br>
+    please write your company or corporation name .<br>
+    and please feel free and write your opinion about this weblog .
+    thanks.
+</p>
+<hr>
+<h1>create a new post</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">create post</button>
+
+</form>
+<hr>
+<a href="/allpost/">back to allpost page</a>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comment Create</title>
+</head>
+<body>
+<P>
+    <a href="/allpost/postcreate/">click here to go to post create page</a></P>
+<hr>
+<h1>create comment for post bellow</h1>
+<h2>Post Title :</h2><h3>{{ post.title }}</h3>
+<h2>Post description :</h2><h3>{{ post.decription }}</h3>
+<br>
+<h2>Comment Form :</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">create comment</button>
+
+</form>
+<hr>
+<a href="/allpost/{{ pk }}/">back to post page</a>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+.HomeBottom {
+    width: 90px;
+    height: 37px;
+
+    text-align: center;
+    font-size: x-large;
+    padding-top: 5px;
+    text-decoration: none;
+    color: black;
+
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    border: black 2px solid;
+    border-radius: 10px;
+
+    background-color: aquamarine;
+
+    transition-duration: 0.4s;
+
+}
+
+.HomeBottom:hover {
+    background-color: white;
+}
+
+
+.LoginBottom {
+    width: 110px;
+    height: 37px;
+
+    text-align: center;
+    font-size: x-large;
+    padding-top: 5px;
+    text-decoration: none;
+    color: black;
+
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+    border: black 2px solid;
+    border-radius: 10px;
+
+    background-color: aquamarine;
+
+    transition-duration: 0.4s;
+
+}
+
+.LoginBottom:hover {
+    background-color: white;
+}
+
+
+.AboutBottom {
+    width: 110px;
+    height: 37px;
+
+    text-align: center;
+    font-size: x-large;
+    padding-top: 5px;
+    text-decoration: none;
+    color: black;
+
+    position: absolute;
+    right: 150px;
+    top: 20px;
+
+    border: black 2px solid;
+    border-radius: 10px;
+
+    background-color: aquamarine;
+
+    transition-duration: 0.4s;
+
+}
+
+.AboutBottom:hover {
+    background-color: white;
+}
+
+
+.DivBar {
+    background-color: #3130b9;
+    position: absolute;
+    height: 90px;
+    width: 100%;
+
+}
+
+.RightDive{
+    background-color: dimgray;
+    float: right;
+
+    width: 150px;
+    height: 400px;
+    margin-top: 95px;
+
+    position: absolute;
+    right: 10px;
+
+    border-radius: 10px;
+
+    border: aquamarine solid 2px;
+
+
+}
+
+.SideBarListDiv{
+    width: 150px;
+    position: static;
+    border-bottom: black solid 1px;
+
+
+    text-align: center;
+
+
+
+}
+.SideBarListDiv:hover{
+    transition-duration: 0.4s;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+    background-color: gainsboro;
+
+}
+
+#commentdiv{
+    width: 100%;
+
+    background-color: #8c8c8c;
+
+}
+
+#comment{
+    background-color: #8c8c8c;
+    position: absolute;
+    float: right;
+
+
+}
+

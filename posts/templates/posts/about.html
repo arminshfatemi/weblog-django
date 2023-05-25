@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Armin Weblog</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
+  <link rel="stylesheet" type="text/css" href="{% static "css/jquery.bxslider.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "css/font-awesome.min.css"%}">
+  <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css"%}">
+  <link rel="stylesheet" type="text/css" href="{% static "css/animate.css"%}">
+  <link rel="stylesheet" type="text/css" href="{% static "css/style.css"%}">
+</head>
+
+<body>
+
+  <div class="loader"></div>
+  <div id="myDiv">
+    <!--HEADER-->
+    <div class="header">
+      <div class="bg-color">
+        <header id="main-header">
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a class="navbar-brand" href="/home/">Armin<span class="logo-dec"> Weblog</span></a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="/home/">Home</a></li>
+                  <li class=""><a href="/about/">About</a></li>
+                  <li class=""><a href="/allpost/postcreate/">Create post</a></li>
+                  <li class=""><a href="/allpost/">all posts</a></li>
+                  {% comment %}<li class=""><a href="#testimonial">Testimonial</a></li>
+                  <li class=""><a href="#blog">Blog</a></li>
+                  <li class=""><a href="#contact">Contact Us</a></li> {% endcomment %}
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+          <div class="wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="banner-info text-center wow fadeIn delay-05s">
+                <h1 class="bnr-title">About ME</h1>
+                <h2 class="bnr-sub-title">Armin SH Fatemi</h2>
+                <p class="bnr-para">Here I have write why i build this weblog and who I'am.</p>
+                <div class="brn-btn">
+                  <a href="/allpost/" class="btn btn-download">All Posts</a>
+                  <a href="allpost/postcreate/" class="btn btn-more">Create Post</a>
+                </div>
+                <div class="overlay-detail">
+                  {% comment %}<a href="#feature"><i class="fa fa-angle-down"></i></a>{% endcomment %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <section id="feature" class="section-padding wow fadeIn delay-05s">
+      <div class="container">
+        <div class="row">
+
+
+          <a href="/allpost/">
+              <div class="col-md-3 col-sm-6 col-xs-12" style="--button-hover-bg: black">
+                  <h3 class="pad-bt15">About me</h3>
+                <div style="height: 100%; width: 400px; float: left">
+                    <hr>
+                    <h5>Contact info</h5>
+                    <p>
+                        <strong>Full Name :</strong>&ensp;Armin sheykh Veysi Fatemi<br>
+                        <strong>Gmail :</strong>&ensp;arminsh610@gmail.com<br>
+                        <strong>Phone Number:</strong>&ensp;09114104825<br>
+                        &ensp;&ensp;&ensp;<br>
+                        &ensp;&ensp;&ensp;
+                    </p>
+                </div>
+                  <hr>
+
+
+
+
+
+                    <div style="width: 900px">
+                  <h5>Who I'M</h5>
+                  <p>
+                      I'm a python back-end developer with django , Currently i'm learning django , I live in Gorgan <br>
+                      in Iran , i would like to join in any internship to make better my skill. <br>
+                      i like many fields in programming like AI , blockchain , and making game but
+                      for now im practicing in back-end, thanks alot
+
+
+                  </p>
+                    </div>
+
+
+
+          </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+    <section id="service" class="section-padding wow fadeInUp delay-05s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="service-title pad-bt15">Why i build this site </h2>
+            <p class="sub-title pad-bt15">i build this weblog for my resume , and see how much skill do i have<br>
+                im learning django and im keep practicing to get better in django <br>
+                my main focus is on back-end so i hope everyone understand why front-end of site is weak<br>
+                i believe in future i will get skilled in front-end too <br>
+
+                </p>
+            <hr class="bottom-line">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+</body>
+
+</html>

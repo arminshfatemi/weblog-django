@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Armin Weblog</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
+  <link rel="stylesheet" type="text/css" href="{% static "css/jquery.bxslider.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "css/font-awesome.min.css"%}">
+  <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css"%}">
+  <link rel="stylesheet" type="text/css" href="{% static "css/animate.css"%}">
+  <link rel="stylesheet" type="text/css" href="{% static "css/style.css"%}">
+</head>
+
+<body>
+
+  <div class="loader"></div>
+  <div id="myDiv">
+    <!--HEADER-->
+    <div class="header">
+      <div class="bg-color">
+        <header id="main-header">
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a class="navbar-brand" href="/home/">Armin<span class="logo-dec"> Weblog</span></a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="/home/">Home</a></li>
+                  <li class=""><a href="/about/">About</a></li>
+                  <li class=""><a href="/allpost/postcreate/">Create post</a></li>
+                  <li class=""><a href="/allpost/">all posts</a></li>
+                 {% comment %} <li class=""><a href="#testimonial">Testimonial</a></li>
+                  <li class=""><a href="#blog">Blog</a></li>
+                  <li class=""><a href="#contact">Contact Us</a></li> {% endcomment %}
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="banner-info text-center wow fadeIn delay-05s">
+                <h1 class="bnr-title">Weblog belongs to:</h1>
+                <h2 class="bnr-sub-title">Armin SH Fatemi</h2>
+                <p class="bnr-para">Here you can see all post that is created.
+                    <br> you can create your post here too feel free and create your post.
+                </p>
+                <div class="brn-btn">
+                  <a href="/allpost/" class="btn btn-download">All Posts</a>
+                  <a href="/allpost/postcreate/" class="btn btn-more">Create Post</a>
+                </div>
+                <div class="overlay-detail">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ HEADER-->
+    <!---->
+    <section id="feature" class="section-padding wow fadeIn delay-05s">
+      <div class="container">
+        <div class="row">
+            {% for p in posts %}
+
+          <a href="/allpost/{{ p.pk }}/">
+              <div class="col-md-3 col-sm-6 col-xs-12" style="--button-hover-bg: black">
+            <div class="wrap-item text-center">
+              <div class="item-img">
+                {% comment %}<img alt="" src="{% static  "img/ser01.png" %}">{% endcomment %}
+              </div>
+
+              <h3 class="pad-bt15">{{ p.title }}</h3>
+              <p>
+                  {{ p.decription }}
+              </p>
+
+
+            </div>
+          </div>
+          </a>
+            {% endfor %}
+        </div>
+      </div>
+    </section>
+    <!---->
+    <!---->
+
+
+  </div>
+  <script src={% static "js/jquery.min.js"%}></script>
+  <script src={% static "js/jquery.easing.min.js"%}></script>
+  <script src={% static "js/bootstrap.min.js"%}></script>
+  <script src={% static "js/wow.js"%}></script>
+  <script src={% static "js/jquery.bxslider.min.js"%}></script>
+  <script src={% static "js/custom.js"%}></script>
+  <script src={% static "contactform/contactform.js"%}></script>
+
+</body>
+</html>
